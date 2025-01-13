@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Aventuras em Mata de São João</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://example.com/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .container h1 {
+            font-size: 3.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .start-button {
+            background-color: #32CD32;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .start-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilo para as instruções */
+        .instructions {
+            background-color: #ffe8a1;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .instructions h2 {
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .instructions p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jogo: Aventuras em Mata de São João</h1>
+        <p>Prepare-se para explorar a cidade de Mata de São João! Descubra seus segredos e divirta-se enquanto aprende.</p>
+
+        <div class="instructions">
+            <h2>Instruções:</h2>
+            <p>1. Navegue pelos pontos turísticos e colete informações interessantes.</p>
+            <p>2. Complete desafios e mini-jogos para ganhar pontos.</p>
+            <p>3. Descubra a história e cultura local!</p>
+        </div>
+
+        <button class="start-button" onclick="iniciarJogo()">Começar a Aventura!</button>
+
+        <div class="footer">
+            <p>&copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/">Voltar à Página Inicial</a></p>
+        </div>
+    </div>
+
+    <script>
+        function iniciarJogo() {
+            // Aqui você pode adicionar a lógica para iniciar o jogo, por exemplo, redirecionar para uma nova página ou carregar o jogo
+            window.location.href = '/jogo/começar'; // Altere conforme a estrutura do seu projeto
+        }
+    </script>
+
+</body>
+</html>

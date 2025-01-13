@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque da cidade</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://example.com/background-fase1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .container h1 {
+            font-size: 3.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .point {
+            background-color: #ffe8a1;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .point h2 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+
+        .point p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .explore-button {
+            background-color: #32CD32;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .explore-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .next-phase-button {
+            background-color: #ff6f61;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        .next-phase-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+
+
+        }
+
+        a:link {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Parque da Cidade</h1>
+
+        <div class="point">
+            <h2>Parque da Cidade</h2> <!-- Nome do ponto!-->
+
+            <p>
+                O Parque da Cidade de Mata de São João é um espaço público dedicado ao lazer, à convivência social e à
+                preservação ambiental, sendo um dos principais locais de encontro da comunidade local. Situado próximo
+                ao centro da cidade, o parque oferece uma combinação equilibrada de áreas verdes, infraestrutura
+                recreativa e um ambiente acolhedor que agrada a pessoas de todas as idades.<br><br>
+
+                Concebido como uma iniciativa para valorizar os espaços naturais do município, o parque promove a
+                integração entre os moradores e a natureza. Ele é um exemplo de como áreas urbanas podem ser planejadas
+                para oferecer qualidade de vida, enquanto preservam elementos do ecossistema local.<br><br>
+
+                O parque destaca-se por sua ampla área verde, composta por árvores nativas, gramados e jardins bem
+                cuidados. Essas áreas oferecem sombra e um clima agradável, tornando o local perfeito para caminhadas,
+                piqueniques e momentos de relaxamento. Além disso, o parque é um refúgio para quem busca tranquilidade
+                em meio ao cotidiano.<br><br>
+
+                Sua infraestrutura inclui trilhas para caminhadas e corridas, equipamentos de ginástica ao ar livre e
+                áreas de lazer para crianças, com playgrounds de madeira e espaços seguros para brincadeiras. O parque
+                também conta com bancos e quiosques, ideais para descansar ou socializar.<br><br>
+
+                O Parque da Cidade é também um ponto de encontro para atividades culturais e esportivas. Feiras de
+                artesanato, apresentações musicais e oficinas educativas são frequentemente realizadas no local,
+                atraindo tanto moradores quanto visitantes. Durante datas comemorativas, como o São João e o aniversário
+                da cidade, o parque é decorado e se torna o epicentro das celebrações.<br><br>
+
+                Outro aspecto importante é seu compromisso com a preservação ambiental. O parque funciona como uma área
+                de conservação, promovendo a conscientização sobre a importância de proteger os recursos naturais da
+                região. Programas educativos, voltados principalmente para escolas locais, reforçam essa missão.<br><br>
+
+                Mais do que um espaço de lazer, o Parque da Cidade é um símbolo de bem-estar e conexão com a natureza em
+                Mata de São João. Ele reflete a preocupação do município em oferecer qualidade de vida à população e
+                preservar seu patrimônio ambiental, sendo um local querido por todos que o visitam.<br><br>
+            </p> <!-- descrição-->
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/">Voltar à Página
+                    Inicial</a></p>
+        </div>
+    </div>
+
+    <script>
+        function explorar(ponto) {
+            switch (ponto) {
+                case 'praia-do-forte':
+                    alert("Você escolheu explorar a Praia do Forte! Prepare-se para aprender sobre as tartarugas marinhas.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'castelo-garcia':
+                    alert("Você escolheu explorar o Castelo Garcia D'Ávila! Vamos descobrir sua história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'reserva-sapiranga':
+                    alert("Você escolheu explorar a Reserva Ecológica da Sapiranga! Prepare-se para uma aventura na natureza.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praia-imbassai':
+                    alert("Você escolheu explorar a Praia de Imbassai! Um lugar perfeito para a diversão.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'Sauípe':
+                    alert("Você escolheu explorar a Sauípe! Uma verdadeira beleza natural.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praça-matriz':
+                    alert("Você escolheu explorar a Praça da Matriz! Um lugar cheio de história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                default:
+                    alert("Escolha um ponto turístico para explorar!");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praça da Matriz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://example.com/background-fase1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .container h1 {
+            font-size: 3.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .point {
+            background-color: #ffe8a1;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .point h2 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+
+        .point p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .explore-button {
+            background-color: #32CD32;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .explore-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .next-phase-button {
+            background-color: #ff6f61;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        .next-phase-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+
+
+        }
+
+        a:link {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Praça da Matriz</h1>
+
+        <div class="point">
+            <h2>Praça da Matriz</h2> <!-- Nome do ponto!-->
+
+            <p>
+                A Praça da Matriz de Mata de São João é um dos espaços mais simbólicos e frequentados da cidade,
+                localizada no entorno da histórica Igreja Matriz de São João Batista. Este local não apenas complementa
+                a relevância religiosa da região, mas também funciona como um ponto de encontro social e cultural para a
+                comunidade.<br><br>
+
+                A praça é cercada por construções que refletem o charme colonial da cidade, compondo um cenário
+                pitoresco e cheio de história. Sua estrutura foi planejada para proporcionar um ambiente acolhedor, com
+                áreas de descanso, caminhos pavimentados e paisagismo bem cuidado. Árvores frondosas oferecem sombra e
+                frescor, tornando o espaço ideal para passeios e momentos de descontração.<br><br>
+
+                No centro da praça, destaca-se um monumento em homenagem à história e cultura local, que simboliza o
+                orgulho dos moradores por suas raízes. Durante festividades religiosas, como as celebrações de São João
+                Batista, a praça é decorada com bandeirolas e iluminação especial, tornando-se o ponto principal das
+                celebrações e encontros.<br><br>
+
+                O espaço também é conhecido por sua funcionalidade no dia a dia da cidade. Famílias levam crianças para
+                brincar, moradores aproveitam os bancos para conversas descontraídas, e turistas fazem do local uma
+                parada obrigatória para fotos e contemplação da beleza histórica.<br><br>
+
+                A Praça da Matriz é palco de diversos eventos culturais e cívicos, como apresentações artísticas, feiras
+                e festivais. Esses eventos reforçam sua importância como local de integração entre a comunidade e
+                visitantes, além de promoverem a cultura regional.<br><br>
+
+                Mais do que um espaço físico, a Praça da Matriz é um símbolo da tradição e da identidade de Mata de São
+                João, representando o coração da cidade e sendo um lugar onde passado e presente se encontram
+                harmoniosamente.<br><br>
+            </p> <!-- descrição-->
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/">Voltar à Página
+                    Inicial</a></p>
+        </div>
+    </div>
+
+    <script>
+        function explorar(ponto) {
+            switch (ponto) {
+                case 'praia-do-forte':
+                    alert("Você escolheu explorar a Praia do Forte! Prepare-se para aprender sobre as tartarugas marinhas.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'castelo-garcia':
+                    alert("Você escolheu explorar o Castelo Garcia D'Ávila! Vamos descobrir sua história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'reserva-sapiranga':
+                    alert("Você escolheu explorar a Reserva Ecológica da Sapiranga! Prepare-se para uma aventura na natureza.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praia-imbassai':
+                    alert("Você escolheu explorar a Praia de Imbassai! Um lugar perfeito para a diversão.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'Sauípe':
+                    alert("Você escolheu explorar a Sauípe! Uma verdadeira beleza natural.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praça-matriz':
+                    alert("Você escolheu explorar a Praça da Matriz! Um lugar cheio de história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                default:
+                    alert("Escolha um ponto turístico para explorar!");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

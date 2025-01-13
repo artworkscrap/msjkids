@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2: Explorando a Sede</title>
+    <link rel="stylesheet" href="extra.css">
+    <script src="extra.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://example.com/background-fase1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .container h1 {
+            font-size: 3.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .point {
+            background-color: #ffe8a1;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .point h2 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+
+        .point p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .explore-button {
+            background-color: #32CD32;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .explore-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .next-phase-button {
+            background-color: #ff6f61;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        .next-phase-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+
+
+        }
+
+        a:link {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='./index.html'>Inicio</a></li>
+            <li><a class='dropdown-arrow' href=''>Explorar</a>
+                <ul class='sub-menus'>
+                    <li><a href='./fase-1.html'>Fase 1</a></li>
+                    <li><a href='./fase-2.html'>Fase 2</a></li>
+                    <li><a href='./fase-3.html'>Fase 3</a></li>
+                </ul>
+            </li>
+            <li><a href='./menu-jogos.html'>Minijogos</a></li>
+            <li><a href='./about.html'>Sobre</a></li>
+        </ul>
+    </nav>
+
+    <audio id="juliaStart">
+        <source src="./AssistenteVirt/Julia/sounds/fase2.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script>
+        function juliaStart() {
+            var som = document.getElementById("juliaStart");
+            som.play();
+        }
+    </script>
+
+    <audio id="arquivoSomClick">
+        <source src="sounds/click.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script>
+        function somDeClick() {
+            var som = document.getElementById("arquivoSomClick");
+            som.play();
+        }
+    </script>
+
+    <div class="container">
+        <h1>Fase 2: Explorando a Sede</h1>
+        <img src="./AssistenteVirt/Julia/sprites/julia.png" alt="Julia" onclick="juliaStart()"
+            style="float:up;width:200px;height:250px;">
+        <p>Descubra os pontos turísticos mais fascinantes da sede!</p>
+        <p>Aperte para falar com a Julia!</p>
+
+        <div class="point">
+            <h2>Igreja Matriz de São João Batista</h2>
+            <p>Um dos marcos históricos mais importantes da cidade, a igreja foi construída no século XVI e preserva um
+                estilo arquitetônico colonial, representando a história religiosa e cultural da região.</p>
+            <button class="explore-button"><a href="igreja-matriz.html">Explorar</a></button>
+        </div>
+
+        <div class="point">
+            <h2>Praça Barão Açu da Torre</h2>
+            <p>Localizada no centro da cidade, é um ponto de encontro para os moradores e visitantes. A praça é cercada
+                por comércios locais, possui áreas para descanso e uma atmosfera acolhedora.</p>
+            <button class="explore-button"><a href="barao.html">Explorar</a></button>
+        </div>
+
+        <div class="point">
+            <h2>Parque da Cidade</h2>
+            <p>Uma área verde para lazer e práticas esportivas, ideal para quem busca um momento de tranquilidade em
+                meio à natureza ou quer aproveitar as trilhas e espaços de convivência.</p>
+            <button class="explore-button"><a href="parque.html">Explorar</a></button>
+        </div>
+
+        <div class="point">
+            <h2>Casa da Cultura</h2>
+            <p>Um espaço dedicado à promoção da cultura local, onde são realizados eventos, exposições e apresentações
+                artísticas que refletem a identidade da região.</p>
+            <button class="explore-button"><a href="casa-da-cultura.html">Explorar</a></button>
+        </div>
+
+        <div class="point">
+            <h2>Praça da Matriz</h2>
+            <p>Um lugar histórico com espaço para eventos culturais e sociais.</p>
+            <button class="explore-button"><a href="praca-da-matriz.html">Explorar</a></button>
+        </div>
+
+        <button class="next-phase-button" onclick="avancarFase()">Avançar para a Fase 3!</button>
+
+        <div class="footer">
+            <p>&copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/">Voltar à Página
+                    Inicial</a></p>
+        </div>
+    </div>
+
+    <script>
+        function explorar(ponto) {
+            switch (ponto) {
+                case 'praia-do-forte':
+                    alert("Você escolheu explorar a Praia do Forte! Prepare-se para aprender sobre as tartarugas marinhas.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'castelo-garcia':
+                    alert("Você escolheu explorar o Castelo Garcia D'Ávila! Vamos descobrir sua história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'reserva-sapiranga':
+                    alert("Você escolheu explorar a Reserva Ecológica da Sapiranga! Prepare-se para uma aventura na natureza.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praia-imbassai':
+                    alert("Você escolheu explorar a Praia de Imbassai! Um lugar perfeito para a diversão.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'ilha-boipeba':
+                    alert("Você escolheu explorar a Ilha de Boipeba! Uma verdadeira beleza natural.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praça-matriz':
+                    alert("Você escolheu explorar a Praça da Matriz! Um lugar cheio de história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                default:
+                    alert("Escolha um ponto turístico para explorar!");
+            }
+        }
+
+        function avancarFase() {
+            // Aqui você pode redirecionar para a próxima fase do jogo
+            window.location.href = './fase-3.html'; // Altere conforme a estrutura do seu projeto
+        }
+    </script>
+
+</body>
+
+</html>

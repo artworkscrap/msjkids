@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Jogos - Aventuras em Mata de São João</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://example.com/background-menu.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .container h1 {
+            font-size: 3.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .game-option {
+            background-color: #ffe8a1;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-option h2 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+
+        .play-button {
+            background-color: #32CD32;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .play-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="juliaStart">
+        <source src="./AssistenteVirt/Julia/sounds/menu.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script>
+        function juliaStart() {
+            var som = document.getElementById("juliaStart");
+            som.play();
+        }
+    </script>
+
+    <div class="container">
+        <h1>Menu de Jogos</h1>
+
+        <div class="game-option">
+            <h2>1: Explore Mata de São João</h2>
+            <button class="play-button" onclick="iniciarJogo('explorar')">Jogar</button>
+        </div>
+
+        <div class="game-option">
+            <h2>2: Minijogos</h2>
+            <button class="play-button" onclick="iniciarJogo('minijogos')">Jogar</button>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/">Voltar à Página
+                    Inicial</a></p>
+        </div>
+    </div>
+
+    <script>
+        function iniciarJogo(jogo) {
+            switch (jogo) {
+                case 'explorar':
+                    window.location.href = 'fase-1.html'; // Redireciona para a fase 1 do jogo
+                    break;
+                case 'minijogos':
+                    window.location.href = 'menu-jogos.html'; // Redireciona para a página dos minijogos
+                    break;
+                default:
+                    alert("Selecione um jogo válido!");
+            }
+        }
+    </script>
+    <p>Aperte para falar com a Julia!</p>
+    <img src="./AssistenteVirt/Julia/sprites/julia.png" alt="Julia" onclick="juliaStart()"
+        style="float:right;width:200px;height:250px;">
+</body>
+
+</html>

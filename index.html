@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras em Mata de São João</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #56CCF2, #2F80ED);
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #ffda79;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 5px solid #ffa500;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            color: #ff6f61;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .content h2 {
+            font-size: 3rem;
+            color: #2E8B57;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .content p {
+            font-size: 1.8rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .start-button {
+            background-color: #ff6f61;
+            color: #ffffff;
+            padding: 15px 15px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .start-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .illustration {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .illustration img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            background-color: #ffda79;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            border-top: 5px solid #ffa500;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://example.com/clouds.png') repeat-x;
+            z-index: 1;
+            animation: moveClouds 60s linear infinite;
+        }
+
+        @keyframes moveClouds {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="juliaStart">
+        <source src="./AssistenteVirt/Julia/sounds/start.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script>
+        function juliaStart() {
+            var som = document.getElementById("juliaStart");
+            som.play();
+        }
+    </script>
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Aventuras em Mata de São João</h1>
+            <p>Explore, Aprenda e Divirta-se!</p>
+        </div>
+
+        <div class="content">
+            <div class=""></div>
+            <div>
+                <h2>Bem-vindo, Explorador!</h2>
+                <p>Prepare-se para uma aventura cheia de surpresas! Embarque em uma jornada mágica pela cidade de Mata
+                    de São João. Descubra histórias, conheça personagens incríveis e explore lugares encantadores. Tudo
+                    isso enquanto aprende e se diverte!</p>
+                <a href="menu.html" class="start-button">Começar a Aventura!</a>
+
+
+            </div>
+        </div>
+        <p>Aperte para falar com a Julia!</p>
+        <img src="./AssistenteVirt/Julia/sprites/julia.png" alt="Julia" onclick="juliaStart()"
+            style="float:right;width:200px;height:250px;">
+        <div class="footer">
+            &copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/about.html">Sobre o
+                Jogo</a>
+        </div>
+    </div>
+
+    <script>
+        function iniciarJogo() {
+            window.location.href = '/jogo';
+        }
+    </script>
+
+</body>
+
+</html>

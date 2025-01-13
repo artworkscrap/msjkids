@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praia do Forte</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://example.com/background-fase1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .container h1 {
+            font-size: 3.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .point {
+            background-color: #ffe8a1;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .point h2 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+
+        .point p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .explore-button {
+            background-color: #32CD32;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .explore-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .next-phase-button {
+            background-color: #ff6f61;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        .next-phase-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+
+
+        }
+
+        a:link {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="juliaStart">
+        <source src="./AssistenteVirt/Julia/sounds/fase3N.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script>
+        function juliaStart() {
+            var som = document.getElementById("juliaStart");
+            som.play();
+        }
+    </script>
+
+    <div class="container">
+        <h1>Praia do Forte</h1>
+
+        <div class="point">
+            <h2>Praia do Forte</h2> <!-- Nome do ponto!-->
+            <p>Toque para a Julia ler!</p>
+            <img src="./AssistenteVirt/Julia/sprites/julia.png" alt="Julia" onclick="juliaStart()"
+                style="float:right;width:200px;height:250px;">
+            <p>
+                A Praia do Forte é uma das principais e mais famosas praias do estado da Bahia, localizada no município
+                de Mata de São João, a cerca de 80 km ao norte de Salvador. Com suas águas cristalinas, areia dourada e
+                uma infraestrutura turística impecável, a Praia do Forte é um destino turístico de renome nacional e
+                internacional, atraindo visitantes de todas as partes do mundo. <br><br>
+
+                História e Origem <br>
+
+                A história da Praia do Forte remonta ao período colonial, quando foi fundada a aldeia de Santo Antônio
+                da Praia do Forte em 1551, pela ordem dos jesuítas. No entanto, foi no século XVII que a região ganhou
+                mais notoriedade, com a construção do Forte de São Francisco, uma fortaleza que visava proteger a costa
+                baiana contra invasões de piratas e outras ameaças. O forte, que deu nome à praia, é um dos principais
+                marcos históricos da região, e sua construção ajudou a solidificar a importância estratégica do local.
+                <br><br>
+
+                A vila que surgiu ao redor do forte foi crescendo ao longo dos séculos e, com o tempo, a Praia do Forte
+                foi se tornando um ponto de interesse para o turismo, especialmente a partir das décadas de 1990 e 2000,
+                quando o desenvolvimento turístico da região começou a ganhar força. <br><br>
+
+                Beleza Natural <br>
+
+                A Praia do Forte é famosa pela sua beleza natural e por ser um refúgio paradisíaco. Suas águas são
+                calmas e cristalinas, ideais para o banho e para a prática de esportes aquáticos. A praia é cercada por
+                coqueiros, o que proporciona uma paisagem tropical e aconchegante. A região também é rica em fauna e
+                flora, sendo um local de destaque para o ecoturismo. <br><br>
+
+                Uma das principais atrações naturais da Praia do Forte é o Projeto Tamar, uma iniciativa de preservação
+                das tartarugas marinhas, que tem um centro de visitação na região. O projeto é uma referência
+                internacional e permite que os visitantes aprendam mais sobre as tartarugas, além de ter a oportunidade
+                de participar das atividades de preservação. <br><br>
+
+                Além do Projeto Tamar, as piscinas naturais formadas por arrecifes de corais ao largo da praia são outra
+                atração popular. Durante a maré baixa, é possível caminhar até as piscinas naturais, onde os visitantes
+                podem nadar e observar a vida marinha, como peixes coloridos, corais e outras espécies aquáticas.
+                <br><br>
+
+                A Praia do Forte também é cercada por uma vegetação nativa exuberante, com áreas de restinga, manguezais
+                e coqueirais que contribuem para a biodiversidade da região. A área é um ponto de destaque para a
+                observação de aves e para passeios ecológicos. <br><br>
+
+                Infraestrutura e Turismo <br>
+
+                A infraestrutura da Praia do Forte é bastante desenvolvida, oferecendo aos turistas uma ampla variedade
+                de opções de hospedagem, desde pousadas aconchegantes até hotéis de luxo. A região conta com uma
+                excelente oferta de restaurantes e bares, muitos deles localizados à beira-mar, proporcionando uma
+                experiência gastronômica com vista para o oceano. A culinária local é rica em frutos do mar, com pratos
+                típicos como moqueca, acarajé e casquinha de siri, além de deliciosos petiscos e bebidas tropicais.
+                <br><br>
+
+                Além disso, a Praia do Forte possui diversas lojas de artesanato, onde os visitantes podem comprar
+                lembranças da região, como peças de cerâmica, roupas de praia, bijuterias e outros artigos feitos por
+                artesãos locais. <br><br>
+
+                A região é muito procurada por famílias, casais e grupos de amigos que buscam tanto o lazer quanto o
+                contato com a natureza. A praia conta com quiosques, atividades para crianças e opções de entretenimento
+                para todas as idades. <br><br>
+
+                O turismo na Praia do Forte também é marcado por atividades esportivas, como stand-up paddle, caiaque,
+                vela e surfe. Os turistas podem também fazer passeios de barco para explorar as belezas da costa, além
+                de caminhar pelas trilhas ecológicas nas proximidades. <br><br>
+
+                Festas e Cultura <br>
+
+                A Praia do Forte não é apenas conhecida por suas belezas naturais, mas também pela sua cultura vibrante.
+                A região realiza diversos eventos ao longo do ano, com destaque para as festas tradicionais, como o
+                Carnaval e a Festa de Nossa Senhora dos Navegantes, padroeira da localidade. <br><br>
+
+                O Carnaval de Praia do Forte é uma festa animada, que reúne moradores e turistas em uma grande
+                celebração. As ruas da vila se enchem de cores, música e dança, com blocos de rua e apresentações de
+                grupos de samba e axé. A festa é um exemplo da cultura baiana, que mistura elementos tradicionais com a
+                alegria contagiante das festas populares. <br><br>
+
+                A Festa de Nossa Senhora dos Navegantes, que acontece em janeiro, é um evento religioso muito importante
+                para a comunidade. A celebração inclui missas, procissões e festividades, atraindo fiéis de diversas
+                partes da Bahia e do Brasil. <br><br>
+
+                Outro evento cultural de destaque é o Festival de Música da Praia do Forte, que reúne artistas e músicos
+                de renome para apresentações ao ar livre, no clima descontraído da vila. O festival tem se tornado cada
+                vez mais popular, atraindo turistas interessados em música e cultura. <br><br>
+
+                Conclusão <br>
+
+                A Praia do Forte é, sem dúvida, um dos destinos mais especiais e completos da Bahia. Com suas praias
+                paradisíacas, rica história, excelente infraestrutura e uma forte conexão com a natureza, ela atrai
+                turistas de todos os cantos do mundo. Seja para relaxar nas areias douradas, explorar a fauna e flora
+                local, ou vivenciar as festas e tradições baianas, a Praia do Forte oferece experiências inesquecíveis e
+                que refletem a verdadeira essência da Bahia.
+
+            </p> <!-- descrição-->
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Aventuras em Mata de São João. Todos os direitos reservados. | <a href="/">Voltar à Página
+                    Inicial</a></p>
+        </div>
+    </div>
+
+    <script>
+        function explorar(ponto) {
+            switch (ponto) {
+                case 'praia-do-forte':
+                    alert("Você escolheu explorar a Praia do Forte! Prepare-se para aprender sobre as tartarugas marinhas.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'castelo-garcia':
+                    alert("Você escolheu explorar o Castelo Garcia D'Ávila! Vamos descobrir sua história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'reserva-sapiranga':
+                    alert("Você escolheu explorar a Reserva Ecológica da Sapiranga! Prepare-se para uma aventura na natureza.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'praia-imbassai':
+                    alert("Você escolheu explorar a Praia de Imbassai! Um lugar perfeito para a diversão.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                case 'ilha-boipeba':
+                    alert("Você escolheu explorar a Ilha de Boipeba! Uma verdadeira beleza natural.");
+                    // Redirecionar ou carregar mais inform isso ai vai apagar po, relaxe, nao vamos usar isso, pq isso ai era p ser um redirecionamento, so q usei o href pq alem de ser mais rapido é mais facil
+                    break;
+                case 'praça-matriz':
+                    alert("Você escolheu explorar a Praça da Matriz! Um lugar cheio de história.");
+                    // Redirecionar ou carregar mais informações
+                    break;
+                default:
+                    alert("Escolha um ponto turístico para explorar!");
+            }
+        }
+
+        function avancarFase() {
+            // Aqui você pode redirecionar para a próxima fase do jogo
+            window.location.href = '/fase2'; // Altere conforme a estrutura do seu projeto
+        }
+    </script>
+
+</body>
+
+</html>
