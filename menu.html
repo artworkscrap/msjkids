@@ -98,12 +98,17 @@
         <h1>Menu de Jogos</h1>
 
         <div class="game-option">
-            <h2>1: Explore Mata de São João</h2>
+            <h2>1: Explore os Pontos Turisticos</h2>
             <button class="play-button" onclick="iniciarJogo('explorar')">Jogar</button>
         </div>
 
         <div class="game-option">
-            <h2>2: Minijogos</h2>
+            <h2>2: Explore as Festas Comemorativas</h2>
+            <button class="play-button" onclick="iniciarJogo('festas')">Jogar</button>
+        </div>
+
+        <div class="game-option">
+            <h2>3: Minijogos</h2>
             <button class="play-button" onclick="iniciarJogo('minijogos')">Jogar</button>
         </div>
 
@@ -123,6 +128,9 @@
                 case 'minijogos':
                     window.location.href = 'menu-jogos.html'; // Redireciona para a página dos minijogos
                     break;
+                case 'festas':
+                    window.location.href = 'festas.html'; // Redireciona para a página dos minijogos
+                break;
                 default:
                     alert("Selecione um jogo válido!");
             }
